@@ -1,0 +1,17 @@
+[
+{
+  "modid": "darkium",
+  "name": "Darkium",
+  "description": "Welcome in a world where only courage and hope can save you",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://darkium.net",
+  "updateUrl": "",
+  "authorList": ["Yslohr"],
+  "credits": "Darkium, all remaining rights reserved after applying all the licenses",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["mcp","FML","Forge"],
+  "dependencies": ["mcp","FML","Forge"]
+}
+]

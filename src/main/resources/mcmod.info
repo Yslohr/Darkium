@@ -1,0 +1,17 @@
+[
+{
+  "modid": "darkium",
+  "name": "Darkium",
+  "description": "Welcome in a world where only courage, bravura and hope can save you",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://darkium.net",
+  "updateUrl": "",
+  "authorList": ["Yslohr"],
+  "credits": "Lérog for making all the mod's textures, any modification to this jar (and the content of this jar) \n is not allowed without a written permission of the authors",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["mcp","FML","Forge"],
+  "dependencies": ["mcp","FML","Forge"]
+}
+]

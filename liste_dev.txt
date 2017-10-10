@@ -1,0 +1,62 @@
+Un multitool en darkium qui coute 4 darkium(qui casse tout casi instent sur 3x3 de rayon, avec une dura plus que l'agenium et autre)
+Le minerai de Darkium non minable 
+Le block de Darkium (qui se craft comme le block de diamand)
+L��p�� en Darkium (qui fait 12 de d�gats d'attaques, qui a tout les effets des autres minerais)
+L�armure en darkium,qui se craft comme l�armure en diamand,qui a pour effets tout les effets des minerais(aregnium et autres)
+LE DARKIUM EST LE MINERAI LE PLUS PUISSANT
+Il a une couleur noire un peu bleut�.
+
+Le minerai d'Argenium non minable 
+Le block d' Argenium (qui se craft comme le block de diamand)
+L�armure en argenium,qui se craft comme l�armure en diamand,
+L'�p�e (10 de d�gats d'attaque,)
+la pioche (8 de d�gats d'attaque)
+La hache (9 de d�gats d'attaque)
+L'ARGENIUM EST UN MINERAI ENTRE LE DIAMAND ET LE DARKIUM,
+Il a une couleur blanc jaunie.
+
+Le minerai de Veranium non minable 
+Le block de Veranium (qui se craft comme le block de diamand)
+L�armure en Veranium,qui se craft comme l�armure en diamand,
+L'�p�e (10 de d�gats d'attaque)
+la pioche (8 de d�gats d'attaque)
+La hache (9 de d�gats d'attaque)
+L'ARGENIUM EST UN MINERAI ENTRE LE DIAMAND ET LE DARKIUM,
+Il a une couleur blanc jaunie.
+LE VERANIUM EST UN MINERAI ENTRE LE DIAMAND ET LE DARKIUM,
+Il a une couleur entre le verre et le gris, tr�s clair
+
+Le minerai de Cabalium non minable 
+Le block de Cabalium (qui se craft comme le block de diamand)
+L�armure en Cabalium,qui se craft comme l�armure en diamand,
+L'�p�e (10 de d�gats d'attaque)
+la pioche (8 de d�gats d'attaque)
+La hache (9 de d�gats d'attaque)
+Les outils en Cabalium(�p�e, pioche, et autres)
+LE CABALIUM EST UN MINERAI ENTRE LE DIAMAND ET LE DARKIUM,
+Il a une couleur entre la lave et le noir(Obsi)
+
+Le � minerai � d�os de dragon non minable (on l�obtiendra en tuant des dragons de custom NCP)
+Le block de d�os de dragon (qui se craft comme le block de diamand)
+L�armure en Os de dragon,qui se craft comme l�armure en diamand,
+L'�p�e (10 de d�gats d'attaque)
+la pioche (8 de d�gats d'attaque)
+La hache (9 de d�gats d'attaque)
+Les outils en Os de dragon(�p�e, pioche, et autres)
+L�OS DE DRAGON EST UN MINERAI ENTRE LE DIAMAND ET LE DARKIUM,
+Il a une couleur blanche.
+
+Le steak en darkium, que l�on peut utiliser 15 fois et qui donne speed 2 et l�effet d�une pomme en or 
+Il a une couleur noire un peu bleut�, il se craft avec 1 de darkium et un steck vanilla
+
+Pour la dura de chaque truc je connais pas trop je te laisse g�r�, c'est toi qui fait le mod, tu peut faire ce que tu veut !
+
+Les effets de chaque mienrasi te seront donn� apres r�union ;)
+
+
+All armors > 
+Cabalium > Resistance Fire FAIT
+Argenium > Res chute FAIT
+Os de dragon > R�gen total tt 50s
+Azcanium > Resistance aux d�g�ts du sable/gravier => suffocation, immunis� contre le poison/wither (nom => Veranium => Azcatite ?)
+Darkium > combine les effets (Cabalium, Argenium FAIT), touche � V � qui active l�invisibilit�

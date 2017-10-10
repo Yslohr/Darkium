@@ -1,0 +1,5 @@
+package net.darkium.common.items.food;
+
+public class ItemCookedBeefDarkium {
+
+}

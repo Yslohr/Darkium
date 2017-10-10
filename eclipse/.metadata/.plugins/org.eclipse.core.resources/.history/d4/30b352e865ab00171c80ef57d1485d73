@@ -1,0 +1,93 @@
+package net.darkium.common;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.darkium.common.items.ItemIngotCabalium;
+import net.darkium.common.items.ItemIngotDarkium;
+import net.darkium.common.items.ItemIngotArgenium;
+import net.darkium.common.items.armors.ItemArmorCabalium;
+import net.darkium.common.items.armors.ItemArmorDarkium;
+import net.darkium.common.items.tools.cabalium.ItemAxeCabalium;
+import net.darkium.common.items.tools.cabalium.ItemPickaxeCabalium;
+import net.darkium.common.items.tools.cabalium.ItemSpadeCabalium;
+import net.darkium.common.items.tools.darkium.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
+import net.minecraftforge.common.util.EnumHelper;
+
+public class ItemsRegister {
+
+	public static Item argenium_ingot;
+	public static Item cabalium_ingot;
+	public static Item azcanium_ingot;
+	public static Item darkium_ingot;
+
+	public static Item cabalium_sword, cabalium_axe, cabalium_pickaxe, cabalium_shovel;
+	public static Item cabalium_helmet, cabalium_chestplate, cabalium_leggings, cabalium_boots;
+
+	public static Item darkium_sword, darkium_axe, darkium_pickaxe, darkium_shovel;
+	public static Item darkium_multitools;
+	public static Item darkium_helmet, darkium_chestplate, darkium_leggings, darkium_boots;
+
+	public static Item.ToolMaterial toolsCabalium = EnumHelper.addToolMaterial("toolsCabalium", 3, 3200, 20.0F, 5.0F,
+			25);
+	public static ItemArmor.ArmorMaterial armorCabalium = EnumHelper.addArmorMaterial("armorCabalium", 75,
+			new int[] { 4, 7, 5, 3 }, 25);
+
+	public static Item.ToolMaterial toolsDarkium = EnumHelper.addToolMaterial("toolsDarkium", 4, 4700, 30.0F, 8, 35);
+	public static ItemArmor.ArmorMaterial armorDarkium = EnumHelper.addArmorMaterial("armorDarkium", 100,
+			new int[] { 5, 7, 6, 4 }, 35);
+
+	public static void init() {
+		argenium_ingot = new ItemIngotArgenium();
+		cabalium_ingot = new ItemIngotCabalium();
+		darkium_ingot = new ItemIngotDarkium();
+
+		cabalium_sword = new ItemSwordCabilium(toolsCabalium);
+		cabalium_axe = new ItemAxeCabalium(toolsCabalium);
+		cabalium_pickaxe = new ItemPickaxeCabalium(toolsCabalium);
+		cabalium_shovel = new ItemSpadeCabalium(toolsCabalium);
+
+		cabalium_helmet = new ItemArmorCabalium(armorCabalium, 0);
+		cabalium_chestplate = new ItemArmorCabalium(armorCabalium, 1);
+		cabalium_leggings = new ItemArmorCabalium(armorCabalium, 2);
+
+		darkium_sword = new ItemSwordDarkium(toolsDarkium);
+		darkium_axe = new ItemAxeDarkium(toolsDarkium);
+		darkium_pickaxe = new ItemPickaxeDarkium(toolsDarkium);
+		darkium_shovel = new ItemSpadeDarkium(toolsDarkium);
+		darkium_multitools = new ItemMultiToolsDarkium(toolsDarkium);
+
+		darkium_helmet = new ItemArmorDarkium(armorDarkium, 0).setCreativeTab(ClientProxy.tabDarkium)
+				.setUnlocalizedName("darkium_helmet").setTextureName(Darkium.MOD_ID + ":darkium_helmet");
+		darkium_chestplate = new ItemArmorDarkium(armorDarkium, 1).setCreativeTab(ClientProxy.tabDarkium)
+				.setUnlocalizedName("darkium_chestplate").setTextureName(Darkium.MOD_ID + ":darkium_chestplate");
+		darkium_leggings = new ItemArmorDarkium(armorDarkium, 2).setCreativeTab(ClientProxy.tabDarkium)
+				.setUnlocalizedName("darkium_leggings").setTextureName(Darkium.MOD_ID + ":darkium_leggings");
+		darkium_boots = new ItemArmorDarkium(armorDarkium, 3).setCreativeTab(ClientProxy.tabDarkium)
+				.setUnlocalizedName("darkium_boots").setTextureName(Darkium.MOD_ID + ":darkium_boots");
+
+		register();
+	}
+
+	private static void register() {
+		// registerItems(argenium_ingot);
+		registerItems(darkium_ingot);
+		registerItems(darkium_axe);
+		registerItems(darkium_pickaxe);
+		registerItems(darkium_shovel);
+		registerItems(darkium_sword);
+		registerItems(darkium_multitools);
+
+		registerItems(darkium_helmet);
+		registerItems(darkium_chestplate);
+		registerItems(darkium_leggings);
+		registerItems(darkium_boots);
+	}
+
+	private static void registerItems(Item item) {
+		GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+	}
+
+}

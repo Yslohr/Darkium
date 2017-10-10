@@ -1,0 +1,22 @@
+package net.darkium.common.items.armors;
+
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.darkium.common.ItemsRegister;
+import net.darkium.common.items.ingots.ItemIngotArgenium;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+
+public class ItemSwordArgenium extends ItemSword {
+	public ItemSwordArgenium(ToolMaterial toolMaterial) {
+		super(toolMaterial);
+		this.setCreativeTab(Darkium.tabDarkium);
+		this.setUnlocalizedName("argenium_sword");
+		this.setTextureName(Darkium.MOD_ID + ":" + getUnlocalizedName().substring(5));
+	}
+
+	@Override
+	public boolean getIsRepairable(ItemStack input, ItemStack repair) {
+		return repair.getItem() == ItemsRegister.argenium_ingot;
+	}
+}

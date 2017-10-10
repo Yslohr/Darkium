@@ -1,0 +1,59 @@
+package net.darkium.common.items.armors;
+
+import net.darkium.Darkium;
+import net.darkium.init.ItemsRegister;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
+
+public class ItemArmorDarkium extends ItemArmor {
+
+    public ItemArmorDarkium(ItemArmor.ArmorMaterial material, int armorSlot) {
+        super(material, 0, armorSlot);
+    }
+
+    @Override
+    public String getArmorTexture(ItemStack itemStack, Entity entity, int slot, String type) {
+        if (itemStack.getItem() == ItemsRegister.darkium_helmet || itemStack.getItem() == ItemsRegister.darkium_chestplate || itemStack.getItem() == ItemsRegister.darkium_boots) {
+            return Darkium.MOD_ID + ":textures/models/armor/darkium_layer_2.png";
+        }
+        return Darkium.MOD_ID + ":textures/models/armor/darkium_layer_1.png";
+    }
+
+    public void onArmorTick(World world, EntityPlayer player, ItemStack stack) {
+        if (!world.isRemote){
+            if (player.getCurrentArmor(3) != null) {
+                if (player.getCurrentArmor(3).getItem() == ItemsRegister.darkium_helmet) {
+                    player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 220, 0, true));
+                }
+            }
+
+            if (player.getCurrentArmor(2) != null) {
+                if (player.getCurrentArmor(2).getItem() == ItemsRegister.darkium_chestplate) {
+                    player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 1, 0, true));
+                }
+            }
+
+            if (player.getCurrentArmor(1) != null) {
+                if (player.getCurrentArmor(1).getItem() == ItemsRegister.darkium_leggings) {
+                    player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 1, 0, false));
+                }
+            }
+
+            if (player.getCurrentArmor(0).getItem() == ItemsRegister.darkium_boots) {
+                if (player.getCurrentArmor(0) != null) {
+                    player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 1, 0, false));
+                }
+            }
+        }
+    }
+
+    @Override
+    public boolean getIsRepairable(ItemStack input, ItemStack repair) {
+        return input.getItem() == ItemsRegister.darkium_ingot;
+    }
+}

@@ -1,0 +1,150 @@
+package net.darkium.common;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.darkium.common.items.ItemIngotArgenium;
+import net.darkium.common.items.ItemIngotAzcanium;
+import net.darkium.common.items.ItemIngotCabalium;
+import net.darkium.common.items.ItemIngotDarkium;
+import net.darkium.common.items.armors.*;
+import net.darkium.common.items.tools.argenium.ItemAxeArgenium;
+import net.darkium.common.items.tools.argenium.ItemPickaxeArgenium;
+import net.darkium.common.items.tools.argenium.ItemSpadeArgenium;
+import net.darkium.common.items.tools.azcanium.ItemAxeAzcanium;
+import net.darkium.common.items.tools.azcanium.ItemPickaxeAzcanium;
+import net.darkium.common.items.tools.azcanium.ItemSpadeAzcanium;
+import net.darkium.common.items.tools.azcanium.ItemSwordAzcanium;
+import net.darkium.common.items.tools.cabalium.ItemAxeCabalium;
+import net.darkium.common.items.tools.cabalium.ItemPickaxeCabalium;
+import net.darkium.common.items.tools.cabalium.ItemSpadeCabalium;
+import net.darkium.common.items.tools.darkium.*;
+import net.minecraft.item.Item;
+
+public class ItemsRegister {
+
+    //Azcanium Items
+	public static Item azcanium_ingot;
+	public static Item azcanium_sword, azcanium_shovel, azcanium_pickaxe, azcanium_axe;
+	public static Item azcanium_helmet, azcanium_chestplate, azcanium_leggings, azcanium_boots;
+
+	//Argenium Items
+	public static Item argenium_ingot;
+	public static Item argenium_sword, argenium_shovel, argenium_pickaxe, argenium_axe;
+	public static Item argenium_helmet, argenium_chestplate, argenium_leggings, argenium_boots;
+
+	// Cabalium Items
+	public static Item cabalium_ingot;
+	public static Item cabalium_sword, cabalium_shovel, cabalium_pickaxe, cabalium_axe;
+	public static Item cabalium_helmet, cabalium_chestplate, cabalium_leggings, cabalium_boots;
+
+	//Dragon Bones Items
+	public static Item dragon_bones;
+	//Dragon Bones
+	public static Item dragon_bones_sword, dragon_bones_shovel, dragon_bones_pickaxe, dragon_bones_axe;
+	public static Item dragon_bones_head, dragon_bones_body, dragon_bones_leggings, dragon_bones_boots;
+
+	//Darkium Items
+	public static Item darkium_ingot, darkium_cooked_steak;
+	//Darkium Tools
+	public static Item darkium_sword, darkium_axe, darkium_pickaxe, darkium_shovel;
+	public static Item darkium_multitools;
+	//Darkium Armor
+	public static Item darkium_helmet, darkium_chestplate, darkium_leggings, darkium_boots;
+
+	public static void init() {
+		// Argenium Items
+		argenium_ingot = new ItemIngotArgenium();
+		// Argenium Tools
+		argenium_sword = new ItemSwordArgenium(ToolsMaterialsDarkium.toolsArgenium);
+		argenium_shovel = new ItemSpadeArgenium(ToolsMaterialsDarkium.toolsArgenium);
+		argenium_pickaxe = new ItemPickaxeArgenium(ToolsMaterialsDarkium.toolsArgenium);
+		argenium_axe = new ItemAxeArgenium(ToolsMaterialsDarkium.toolsArgenium);
+
+		// Argenium Armor
+		argenium_helmet = new ItemArmorArgenium(ArmorsMaterialsDarkium.armorArgenium, 0);
+		argenium_chestplate = new ItemArmorArgenium(ArmorsMaterialsDarkium.armorArgenium, 1);
+		argenium_leggings = new ItemArmorArgenium(ArmorsMaterialsDarkium.armorArgenium, 2);
+		argenium_boots = new ItemArmorArgenium(ArmorsMaterialsDarkium.armorCabalium, 3);
+
+		//Azcanium Items
+        azcanium_ingot = new ItemIngotAzcanium();
+        //Azcanium Tools
+        azcanium_sword = new ItemSwordAzcanium(ToolsMaterialsDarkium.toolsAzcanium);
+        azcanium_shovel = new ItemSpadeAzcanium(ToolsMaterialsDarkium.toolsAzcanium);
+        azcanium_pickaxe = new ItemPickaxeAzcanium(ToolsMaterialsDarkium.toolsAzcanium);
+        azcanium_axe = new ItemAxeAzcanium(ToolsMaterialsDarkium.toolsAzcanium);
+
+        //Azcanium Armor
+        azcanium_helmet = new ItemArmorAzcanium(ArmorsMaterialsDarkium.armorAzcanium, 0);
+        azcanium_chestplate = new ItemArmorAzcanium(ArmorsMaterialsDarkium.armorAzcanium, 1);
+        azcanium_leggings = new ItemArmorAzcanium(ArmorsMaterialsDarkium.armorAzcanium, 2);
+        azcanium_boots = new ItemArmorAzcanium(ArmorsMaterialsDarkium.armorAzcanium, 3);
+
+		// Cabalium Items
+		cabalium_ingot = new ItemIngotCabalium();
+
+		// Cabalium Tools
+
+        /*
+         * Ajouter des dégats de feu aux outils en cabalium sans fireAspect
+         */
+
+		cabalium_sword = new ItemSwordCabilium(ToolsMaterialsDarkium.toolsCabalium);
+		cabalium_axe = new ItemAxeCabalium(ToolsMaterialsDarkium.toolsCabalium);
+		cabalium_pickaxe = new ItemPickaxeCabalium(ToolsMaterialsDarkium.toolsCabalium);
+		cabalium_shovel = new ItemSpadeCabalium(ToolsMaterialsDarkium.toolsCabalium);
+
+		// Cabalium Armor
+		cabalium_helmet = new ItemArmorCabalium(ArmorsMaterialsDarkium.armorCabalium, 0);
+		cabalium_chestplate = new ItemArmorCabalium(ArmorsMaterialsDarkium.armorCabalium, 1);
+		cabalium_leggings = new ItemArmorCabalium(ArmorsMaterialsDarkium.armorCabalium, 2);
+		cabalium_boots = new ItemArmorCabalium(ArmorsMaterialsDarkium.armorCabalium, 3);
+
+        // Darkium Items
+        darkium_ingot = new ItemIngotDarkium();
+
+        // Dragon Bones Tools
+        darkium_sword = new ItemSwordDarkium(ToolsMaterialsDarkium.toolsDarkium);
+        darkium_axe = new ItemAxeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+        darkium_pickaxe = new ItemPickaxeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+        darkium_shovel = new ItemSpadeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+        darkium_multitools = new ItemMultiToolsDarkium(ToolsMaterialsDarkium.toolsDarkium);
+
+        // Darkium Armor
+        darkium_helmet = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 0);
+        darkium_chestplate = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 1);
+        darkium_leggings = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 2);
+        darkium_boots = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 3);
+
+		// Darkium Items
+		darkium_ingot = new ItemIngotDarkium();
+
+		// Darkium Tools
+        /*
+         * Ajouter des dégats de feu aux outils en darkium sans fireAspect
+         */
+		darkium_sword = new ItemSwordDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_axe = new ItemAxeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_pickaxe = new ItemPickaxeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_shovel = new ItemSpadeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_multitools = new ItemMultiToolsDarkium(ToolsMaterialsDarkium.toolsDarkium);
+
+		// Darkium Armor
+		darkium_helmet = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 0);
+		darkium_chestplate = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 1);
+		darkium_leggings = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 2);
+		darkium_boots = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 3);
+		register();
+	}
+
+	private static void register() {
+	    //Registering Argenium Ingot
+	    registerItems(argenium_ingot);
+	    //Registering Argenium Tools
+	    registerItems(az);
+	    //
+	}
+
+	private static void registerItems(Item item) {
+		GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+	}
+}

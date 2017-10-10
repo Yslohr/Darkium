@@ -1,0 +1,21 @@
+package net.darkium.common.items;
+
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.darkium.init.ItemsRegister;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+public class ItemIngotCabalium extends Item {
+    public ItemIngotCabalium() {
+        this.setCreativeTab(ClientProxy.tabDarkium);
+        this.setUnlocalizedName("cabalium_ingot");
+        this.setTextureName(Darkium.MOD_ID + ":" + getUnlocalizedName().substring(5));
+    }
+
+    @Override
+    public boolean isBeaconPayment(ItemStack stack) {
+        if (this == ItemsRegister.cabalium_ingot) return true;
+        else return false;
+    }
+}

@@ -1,0 +1,84 @@
+#
+# Creative Tabs
+#
+
+itemGroup.tabDarkium=Darkium
+
+
+#
+# Blocks
+#
+
+tile.darkium_block.name=Darkium Block
+
+
+#
+# Items
+#
+
+item.argenium_ingot.name=Argenium Ingot
+item.azcanium_ingot.name=Azcanium Ingot
+item.cabalium_ingot.name=Cabalium Ingot
+item.dragon_bone.name=Dragon Bone
+item.darkium_ingot.name=Darkium Ingot
+
+
+#
+# Tools
+#
+
+item.argenium_sword.name=Argenium Sword
+item.argenium_shovel.name=Argenium Shovel
+item.argenium_pickaxe.name=Argenium Pickaxe
+item.argenium_axe.name=Argenium Axe
+
+item.azcanium_sword.name=Azcanium Sword
+item.azcanium_shovel.name=Azcanium Shovel
+item.azcanium_pickaxe.name=Azcanium Pickaxe
+item.azcanium_axe.name=Azcanium Axe
+
+item.cabalium_sword.name=Cabalium Sword
+item.cabalium_shovel.name=Cabalium Shovel
+item.cabalium_pickaxe.name=Cabalium Pickaxe
+item.cabalium_axe.name=Cabalium Axe
+
+item.dragon_bones_sword.name=Dragon Bones Sword
+item.dragon_bones_shovel.name=Dragon Bones Shovel
+item.dragon_bones_pickaxe.name=Dragon Bones Pickaxe
+item.dragon_bones_axe.name=Dragon Bones Axe
+
+item.darkium_sword.name=Darkium Sword
+item.darkium_shovel.name=Darkium Shovel
+item.darkium_pickaxe.name=Darkium Pickaxe
+item.darkium_axe.name=Darkium Axe
+item.darkium_multitools.name=Darkium Multitools
+
+
+#
+# Armors
+#
+
+item.argenium_helmet.name=Argenium Helmet
+item.argenium_chestplate.name=Argenium Chestplate
+item.argenium_leggings.name=Argenium Leggings
+item.argenium_boots.name=Argenium Boots
+
+item.azcanium_helmet.name=Azcanium Helmet
+item.azcanium_chestplate.name=Azcanium Chestplate
+item.azcanium_leggings.name=Azcanium Leggings
+item.azcanium_boots.name=Azcanium Boots
+
+item.cabalium_helmet.name=Cabalium Helmet
+item.cabalium_chestplate.name=Cabalium Chestplate
+item.cabalium_leggings.name=Cabalium Leggings
+item.cabalium_boots.name=Cabalium Boots
+
+item.dragon_bones_helmet.name=Dragon Bones Helmet
+item.dragon_bones_chestplate.name=Dragon Bones Chestplate
+item.dragon_bones_leggings.name=Dragon Bones Leggings
+item.dragon_bones_boots.name=Dragon Bones Boots
+
+item.darkium_helmet.name=Darkium Helmet
+item.darkium_chestplate.name=Darkium Chestplate
+item.darkium_leggings.name=Darkium Leggings
+item.darkium_boots.name=Darkium Boots

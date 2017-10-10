@@ -1,0 +1,133 @@
+package net.darkium.common;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.darkium.common.items.ItemIngotArgenium;
+import net.darkium.common.items.ItemIngotCabalium;
+import net.darkium.common.items.ItemIngotDarkium;
+import net.darkium.common.items.armors.ItemArmorArgenium;
+import net.darkium.common.items.armors.ItemArmorCabalium;
+import net.darkium.common.items.armors.ItemArmorDarkium;
+import net.darkium.common.items.armors.ItemSwordArgenium;
+import net.darkium.common.items.tools.argenium.ItemAxeArgenium;
+import net.darkium.common.items.tools.argenium.ItemPickaxeArgenium;
+import net.darkium.common.items.tools.argenium.ItemSpadeArgenium;
+import net.darkium.common.items.tools.cabalium.ItemAxeCabalium;
+import net.darkium.common.items.tools.cabalium.ItemPickaxeCabalium;
+import net.darkium.common.items.tools.cabalium.ItemSpadeCabalium;
+import net.darkium.common.items.tools.darkium.*;
+import net.minecraft.item.Item;
+
+public class ItemsRegister {
+	public static Item azcanium_ingot;
+
+	public static Item argenium_ingot;
+	public static Item argenium_sword, argenium_shovel, argenium_pickaxe, argenium_axe;
+	public static Item argenium_helmet, argenium_chestplate, argenium_leggings, argenium_boots;
+
+	// Cabalium Items
+	public static Item cabalium_ingot;
+	public static Item cabalium_sword, cabalium_axe, cabalium_pickaxe, cabalium_shovel;
+	public static Item cabalium_helmet, cabalium_chestplate, cabalium_leggings, cabalium_boots;
+
+	public static Item darkium_ingot, darkium_cooked_steak;
+	public static Item darkium_sword, darkium_axe, darkium_pickaxe, darkium_shovel;
+	public static Item darkium_multitools;
+	public static Item darkium_helmet, darkium_chestplate, darkium_leggings, darkium_boots;
+
+	public static void init() {
+		// Argenium Items
+		argenium_ingot = new ItemIngotArgenium();
+		// Argenium Tools
+		argenium_sword = new ItemSwordArgenium(ToolsMaterialsDarkium.toolsArgenium);
+		argenium_shovel = new ItemSpadeArgenium(ToolsMaterialsDarkium.toolsArgenium);
+		argenium_pickaxe = new ItemPickaxeArgenium(ToolsMaterialsDarkium.toolsArgenium);
+		argenium_axe = new ItemAxeArgenium(ToolsMaterialsDarkium.toolsArgenium);
+
+		// Argenium Armor
+		argenium_helmet = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 0)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("argenium_helmet")
+				.setTextureName(Darkium.MOD_ID + ":argenium_helmet");
+		argenium_chestplate = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 1)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("argenium_chestplate")
+				.setTextureName(Darkium.MOD_ID + ":argenium_chestplate");
+		argenium_leggings = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 2)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("argenium_leggings")
+				.setTextureName(Darkium.MOD_ID + ":argenium_leggings");
+		argenium_boots = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 3)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("argenium_boots")
+				.setTextureName(Darkium.MOD_ID + ":argenium_boots");
+
+		// Cabalium Items
+		cabalium_ingot = new ItemIngotCabalium();
+
+		// Cabalium Tools
+		cabalium_sword = new ItemSwordCabilium(ToolsMaterialsDarkium.toolsCabalium);
+		cabalium_axe = new ItemAxeCabalium(ToolsMaterialsDarkium.toolsCabalium);
+		cabalium_pickaxe = new ItemPickaxeCabalium(ToolsMaterialsDarkium.toolsCabalium);
+		cabalium_shovel = new ItemSpadeCabalium(ToolsMaterialsDarkium.toolsCabalium);
+
+		// Cabalium Armor
+		cabalium_helmet = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 0)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("cabalium_helmet")
+				.setTextureName(Darkium.MOD_ID + ":cabalium_helmet");
+		cabalium_chestplate = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 1)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("cabalium_chestplate")
+				.setTextureName(Darkium.MOD_ID + ":cabalium_chestplate");
+		cabalium_leggings = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 2)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("cabalium_leggings")
+				.setTextureName(Darkium.MOD_ID + ":cabalium_leggings");
+		cabalium_boots = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorCabalium, 3)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("cabalium_boots")
+				.setTextureName(Darkium.MOD_ID + ":cabalium_boots");
+
+		// Darkium Items
+		darkium_ingot = new ItemIngotDarkium();
+
+		// Darkium Tools
+		darkium_sword = new ItemSwordDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_axe = new ItemAxeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_pickaxe = new ItemPickaxeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_shovel = new ItemSpadeDarkium(ToolsMaterialsDarkium.toolsDarkium);
+		darkium_multitools = new ItemMultiToolsDarkium(ToolsMaterialsDarkium.toolsDarkium);
+
+		// Darkium Armor
+		darkium_helmet = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 0)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("darkium_helmet")
+				.setTextureName(Darkium.MOD_ID + ":darkium_helmet");
+		darkium_chestplate = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 1)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("darkium_chestplate")
+				.setTextureName(Darkium.MOD_ID + ":darkium_chestplate");
+		darkium_leggings = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 2)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("darkium_leggings")
+				.setTextureName(Darkium.MOD_ID + ":darkium_leggings");
+		darkium_boots = new ItemArmorDarkium(ArmorsMaterialsDarkium.armorDarkium, 3)
+				.setCreativeTab(ClientProxy.tabDarkium).setUnlocalizedName("darkium_boots")
+				.setTextureName(Darkium.MOD_ID + ":darkium_boots");
+
+		register();
+	}
+
+	private static void register() {
+		registerItems(argenium_ingot);
+		//Registering Darkium Items
+		registerItems(darkium_ingot);
+		//Registering Darkium Tools
+		registerItems(darkium_axe);
+		registerItems(darkium_pickaxe);
+		registerItems(darkium_shovel);
+		registerItems(darkium_sword);
+		registerItems(darkium_multitools);
+
+		//Registering Darkium Armor
+		registerItems(darkium_helmet);
+		registerItems(darkium_chestplate);
+		registerItems(darkium_leggings);
+		registerItems(darkium_boots);
+	}
+
+	private static void registerItems(Item item) {
+		GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+	}
+}

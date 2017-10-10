@@ -1,0 +1,25 @@
+package net.darkium.common.items.tools.darkium;
+
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.darkium.init.ItemsRegister;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemStack;
+
+public class ItemPickaxeDarkium extends ItemPickaxe {
+    public ItemPickaxeDarkium(ToolMaterial darkiumToolsMaterial) {
+        super(darkiumToolsMaterial);
+        this.setCreativeTab(ClientProxy.tabDarkium);
+        this.setUnlocalizedName("darkium_pickaxe");
+        this.setTextureName(Darkium.MOD_ID + ":" + getUnlocalizedName().substring(5));
+    }
+
+    @Override
+    public boolean getIsRepairable(ItemStack input, ItemStack repair) {
+        if (repair.getItem() == ItemsRegister.darkium_ingot) {
+            return true;
+        }
+        return false;
+    }
+
+}

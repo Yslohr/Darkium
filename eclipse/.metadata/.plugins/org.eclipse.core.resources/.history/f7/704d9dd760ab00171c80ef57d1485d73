@@ -1,0 +1,28 @@
+package net.darkium.client;
+
+import net.darkium.init.ItemsRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class TabDarkium extends CreativeTabs {
+    public static String label;
+    public TabDarkium(String label) {
+        super(label);
+        this.label = label;
+    }
+
+    @Override
+    public boolean hasSearchBar() {
+        return true;
+    }
+
+    @Override
+    public String getTabLabel() {
+        return super.getTabLabel();
+    }
+
+    @Override
+    public Item getTabIconItem() {
+        return ItemsRegister.darkium_ingot;
+    }
+}

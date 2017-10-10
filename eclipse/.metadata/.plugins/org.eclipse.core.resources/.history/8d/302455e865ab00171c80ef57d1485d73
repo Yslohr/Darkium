@@ -1,0 +1,7 @@
+package net.darkium.common.items.armors;
+
+import net.minecraft.item.ItemArmor;
+
+public class ItemSwordArgenium extends ItemArmor {
+
+}

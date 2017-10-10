@@ -1,0 +1,23 @@
+package net.darkium.common.items.tools.darkium;
+
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.darkium.init.ItemsRegister;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+
+public class ItemSwordCabilium extends ItemSword {
+    public ItemSwordCabilium(ToolMaterial toolMaterial) {
+        super(toolMaterial);
+        this.setCreativeTab(ClientProxy.tabDarkium);
+        this.setUnlocalizedName("cabalium_sword");
+        this.setTextureName(Darkium.MOD_ID + ":" + getUnlocalizedName().substring(5));
+    }
+
+    @Override
+    public boolean getIsRepairable(ItemStack input, ItemStack repair) {
+        if (repair.getItem() == ItemsRegister.cabalium_ingot) return true;
+        else return false;
+    }
+
+}

@@ -1,0 +1,26 @@
+package net.darkium.init;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.darkium.common.blocks.BlockDarkium;
+import net.minecraft.block.material.Material;
+
+public class BlocksRegister {
+
+    private static Block darkium_block;
+
+    public static void init() {
+        darkium_block = new BlockDarkium(Material.iron);
+
+        register();
+    }
+
+    private static void register(){
+        registerBlocks(darkium_block);
+    }
+
+    private static void registerBlocks(Block block){
+        GameRegistry.registerBlock(block, block.getUnlocalizedName().substring(5));
+    }
+
+}

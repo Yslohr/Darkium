@@ -1,0 +1,17 @@
+package net.darkium.common.blocks;
+
+import net.darkium.Darkium;
+import net.darkium.client.ClientProxy;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockDarkium extends Block {
+
+    public BlockDarkium(Material material) {
+        super(material);
+        this.setBlockName("darkium_block");
+        this.setBlockTextureName(Darkium.MOD_ID + ":" + getUnlocalizedName().substring(5));
+        this.setCreativeTab(ClientProxy.tabDarkium);
+        this.setResistance(18000000.0F);
+    }
+}

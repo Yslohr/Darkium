@@ -1,0 +1,23 @@
+package net.darkium.common;
+
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.darkium.init.BlocksRegister;
+import net.darkium.init.ItemsRegister;
+
+public class CommonProxy {
+
+    public static final boolean IS_MOD_IN_DEV = true;
+
+    public void preInit(FMLPreInitializationEvent event) {
+        ItemsRegister.init();
+        BlocksRegister.init();
+    }
+
+    public void init(FMLInitializationEvent event) {
+    }
+
+    public void postInit(FMLPostInitializationEvent event) {
+    }
+}

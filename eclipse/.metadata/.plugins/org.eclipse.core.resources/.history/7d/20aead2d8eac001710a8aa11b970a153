@@ -1,0 +1,46 @@
+#
+# Blocks
+#
+
+tile.darkium_block.name=Darkium Block
+
+
+#
+# Items
+#
+
+item.azcanium_ingot.name=Azcanium Ingot
+item.azcanium_ingot.name=Azcanium Ingot
+item.cabalium_ingot.name=Cabalium Ingot
+item.dragon_bone.name=Dragon Bone
+item.darkium_ingot.name=Darkium Ingot
+
+
+#
+# Tools
+#
+
+item.argenium_sword.name=Argenium Sword
+item.argenium_shovel.name=Argenium Shovel
+item.argenium_pickaxe.name=Argenium Pickaxe
+item.argenium_axe.name=Argenium Axe
+
+item.azcanium_sword.name=Azcanium Sword
+item.azcanium_shovel.name=Azcanium Shovel
+item.azcanium_pickaxe.name=Azcanium Pickaxe
+item.azcanium_axe.name=Azcanium Axe
+
+
+#
+# Armors
+#
+
+item.argenium_helmet.name=Argenium Helmet
+item.argenium_chestplate.name=Argenium Chestplate
+item.argenium_leggings.name=Argenium Leggings
+item.argenium_boots.name=Argenium Boots
+
+item.azcanium_helmet.name=Azcanium Helmet
+item.azcanium_chestplate.name=Azcanium Chestplate
+item.azcanium_leggings.name=Azcanium Leggings
+item.azcanium_boots.name=Azcanium Boots
