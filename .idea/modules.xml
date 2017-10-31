@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Darkium.iml" filepath="$PROJECT_DIR$/Darkium.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Darkium_api.iml" filepath="$PROJECT_DIR$/.idea/modules/Darkium_api.iml" group="Darkium" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Darkium_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Darkium_main.iml" group="Darkium" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Darkium_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Darkium_test.iml" group="Darkium" />
     </modules>
   </component>
 </project>

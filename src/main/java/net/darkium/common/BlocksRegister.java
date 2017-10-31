@@ -1,10 +1,8 @@
 package net.darkium.common;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
 import net.darkium.common.blocks.BlockDarkium;
-import net.minecraft.block.BlockOre;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
 
 public class BlocksRegister {
 
@@ -12,12 +10,13 @@ public class BlocksRegister {
    // private static Block argenium_ore, azcanium_ore, cabalium_ore, dragon_fossil;
 
     public static void init() {
-        darkium_block = new BlockDarkium(Material.iron);
-
+        //argenium_block = new BlockArgenium();
+        darkium_block = new BlockDarkium();
         register();
     }
 
     private static void register(){
+        //registerBlocks(argenium_block);
         registerBlocks(darkium_block);
     }
 

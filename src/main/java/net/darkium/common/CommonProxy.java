@@ -3,6 +3,7 @@ package net.darkium.common;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.darkium.common.handlers.OreDictionaryHandler;
 
 public class CommonProxy {
 
@@ -16,6 +17,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
+        OreDictionaryHandler.init();
     }
 
     public void postInit(FMLPostInitializationEvent event) {

@@ -2,11 +2,7 @@ package net.darkium.common;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.darkium.common.items.ItemDragonBone;
-import net.darkium.common.items.armors.ItemArmorArgenium;
-import net.darkium.common.items.armors.ItemArmorAzcanium;
-import net.darkium.common.items.armors.ItemArmorCabalium;
-import net.darkium.common.items.armors.ItemArmorDarkium;
-import net.darkium.common.items.armors.ItemArmorDragonBones;
+import net.darkium.common.items.armors.*;
 import net.darkium.common.items.ingots.ItemIngotArgenium;
 import net.darkium.common.items.ingots.ItemIngotAzcanium;
 import net.darkium.common.items.ingots.ItemIngotCabalium;
@@ -23,11 +19,7 @@ import net.darkium.common.items.tools.cabalium.ItemAxeCabalium;
 import net.darkium.common.items.tools.cabalium.ItemPickaxeCabalium;
 import net.darkium.common.items.tools.cabalium.ItemSpadeCabalium;
 import net.darkium.common.items.tools.cabalium.ItemSwordCabilium;
-import net.darkium.common.items.tools.darkium.ItemAxeDarkium;
-import net.darkium.common.items.tools.darkium.ItemMultiToolsDarkium;
-import net.darkium.common.items.tools.darkium.ItemPickaxeDarkium;
-import net.darkium.common.items.tools.darkium.ItemSpadeDarkium;
-import net.darkium.common.items.tools.darkium.ItemSwordDarkium;
+import net.darkium.common.items.tools.darkium.*;
 import net.darkium.common.items.tools.dragon_bones.ItemAxeDragonBones;
 import net.darkium.common.items.tools.dragon_bones.ItemPickaxeDragonBones;
 import net.darkium.common.items.tools.dragon_bones.ItemSpadeDragonBones;
@@ -36,15 +28,15 @@ import net.minecraft.item.Item;
 
 public class ItemsRegister {
 
+    // Argenium Items
+    public static Item argenium_ingot;
+    public static Item argenium_sword, argenium_shovel, argenium_pickaxe, argenium_axe;
+    public static Item argenium_helmet, argenium_chestplate, argenium_leggings, argenium_boots;
+
 	// Azcanium Items
 	public static Item azcanium_ingot;
 	private static Item azcanium_sword, azcanium_shovel, azcanium_pickaxe, azcanium_axe;
 	public static Item azcanium_helmet, azcanium_chestplate, azcanium_leggings, azcanium_boots;
-
-	// Argenium Items
-	public static Item argenium_ingot;
-	private static Item argenium_sword, argenium_shovel, argenium_pickaxe, argenium_axe;
-	public static Item argenium_helmet, argenium_chestplate, argenium_leggings, argenium_boots;
 
 	// Cabalium Items
 	public static Item cabalium_ingot;
@@ -60,14 +52,14 @@ public class ItemsRegister {
 	// Darkium Items
 	public static Item darkium_ingot;
     // Darkium Tools
-	private static Item darkium_sword, darkium_axe, darkium_pickaxe, darkium_shovel;
-	private static Item darkium_multitools;
-	// Darkium Armor
-	public static Item darkium_helmet, darkium_chestplate, darkium_leggings, darkium_boots;
+    public static Item darkium_sword, darkium_axe, darkium_pickaxe, darkium_shovel;
+    public static Item darkium_multitools;
+    // Darkium Armor
+    public static Item darkium_helmet, darkium_chestplate, darkium_leggings, darkium_boots;
 
-	static void init() {
-		// Argenium Items
-		argenium_ingot = new ItemIngotArgenium();
+    public static void init() {
+        // Argenium Items
+        argenium_ingot = new ItemIngotArgenium();
 		// Argenium Tools
 		argenium_sword = new ItemSwordArgenium(ToolsMaterialsDarkium.toolsArgenium);
 		argenium_shovel = new ItemSpadeArgenium(ToolsMaterialsDarkium.toolsArgenium);

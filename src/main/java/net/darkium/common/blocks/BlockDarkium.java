@@ -2,18 +2,18 @@ package net.darkium.common.blocks;
 
 import net.darkium.Darkium;
 import net.darkium.common.BlocksRegister;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.BlockCompressed;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockDarkium extends Block {
+public class BlockDarkium extends BlockCompressed {
 
-    public BlockDarkium(Material material) {
-        super(material);
+    public BlockDarkium() {
+        super(MapColor.blackColor);
         this.setBlockName("darkium_block");
         this.setBlockTextureName(Darkium.MOD_ID + ":" + getUnlocalizedName().substring(5));
         this.setCreativeTab(Darkium.tabDarkium);
-        this.setResistance(6000000.0F);
+        this.setResistance(-1.0F);
     }
 
     @Override
